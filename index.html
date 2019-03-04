@@ -269,6 +269,10 @@ curl -X POST <span class="se">\</span>
 You must replace <code>82zZIHeBqUlBtICMX5li</code> with your personal API key.
 </aside>
 <h1 id='quote'>Quote</h1><h2 id='creating-a-quote'>Creating a Quote</h2>
+<p>Every insurance policy begins with a quote. You can think of quotes as templates that eventually turn into policies if a user decides to buy. Quotes are used to indicate the terms of the policy and the price (premium) associated with it.</p>
+
+<p>When calculating policy prices, we take many attributes into consideration, such as the user&#39;s age, gender, height, weight and status.  You’ll need to include this information when creating a quote through the API.</p>
+
 <blockquote>
 <p>To get a quote, use this code:</p>
 </blockquote>
@@ -352,9 +356,7 @@ curl -X POST <span class="se">\</span>
   </span><span class="p">},</span><span class="w"> 
   </span><span class="s2">"quote_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a3b4d9e4-567d-4d77-95da-4761b7985320"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves a quote.</p>
-<h3 id='http-request'>HTTP Request</h3>
+</span></code></pre><h3 id='http-request'>HTTP Request</h3>
 <p><code>POST https://api.hellobestow.com/v2/quote</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
